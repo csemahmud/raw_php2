@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<!DOCTYPE NEWSPAPER [
+
+    <!ELEMENT NEWSPAPER (ARTICLE+) >
+    <!ELEMENT ARTICLE (HEADLINE,BYLINE,LEAD,BODY,NOTES)>
+
+    <!ELEMENT HEADLINE (#PCDATA)>
+    <!ELEMENT BYLINE (#PCDATA)>
+    <!ELEMENT LEAD (#PCDATA)>
+    <!ELEMENT BODY (#PCDATA)>
+    <!ELEMENT NOTES (#PCDATA)>
+
+    <!ATTLIST ARTICLE AUTHOR CDATA #REQUIRED>
+    <!ATTLIST ARTICLE EDITOR CDATA "">
+    <!ATTLIST ARTICLE DATE CDATA "">
+    <!ATTLIST ARTICLE EDITION CDATA #IMPLIED>
+
+]>
+
+<NEWSPAPER>
+    
+    <ARTICLE AUTHOR="Author1" EDITOR="Editor1" DATE="1/1/3124" EDITION="1.0">
+        <HEADLINE>
+            Sample1 Head Line
+        </HEADLINE>
+        <BYLINE>
+            Sample1 By Line
+        </BYLINE>
+        <LEAD>
+            Sample1 Lead
+        </LEAD>
+        <BODY>
+            Sample1 Body
+        </BODY>
+        <NOTES>
+            Sample1 Notes
+        </NOTES>
+    </ARTICLE>
+    <ARTICLE AUTHOR="Author1" EDITOR="Editor2" DATE="2/2/3125">
+        <HEADLINE>
+            Sample2 Head Line
+        </HEADLINE>
+        <BYLINE>
+            Sample2 By Line
+        </BYLINE>
+        <LEAD>
+            Sample2 Lead
+        </LEAD>
+        <BODY>
+            Sample2 Body
+        </BODY>
+        <NOTES>
+            Sample2 Notes
+        </NOTES>
+    </ARTICLE>
+    
+</NEWSPAPER>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!--
+    TODO define vocabulary identification data
+    PUBLIC ID  : -//vendor//vocabulary//EN
+    SYSTEM ID  : http://server/path/__NAME__
+-->
+
+<!-- TODO define your own vocabulary/syntax. Example follows:  -->
+
+<!ELEMENT db_registration (tbl_students,tbl_courses,tbl_stud_reg_list)>
+<!ELEMENT tbl_students (student*)>
+<!ELEMENT student (name,cgpa)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT cgpa (#PCDATA)>
+<!ATTLIST student stud_id ID #REQUIRED>
+<!ELEMENT tbl_courses (course*)>
+<!ELEMENT course (title,credit)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT credit (#PCDATA)>
+<!ATTLIST course course ID #REQUIRED>
+<!ELEMENT tbl_stud_reg_list (stud_reg*)>
+<!ELEMENT stud_reg (semester,year)>
+<!ELEMENT semester (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ATTLIST stud_reg stud_id IDREF #REQUIRED>
+<!ATTLIST stud_reg course IDREF #REQUIRED>

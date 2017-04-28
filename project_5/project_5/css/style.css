@@ -1,0 +1,249 @@
+body{
+    margin: 0;padding:0;font-family: Arial;background: #787878;
+}
+
+#wrapper {
+    width: 100%;height: 800px;margin: 50px 0px 0px 0px;
+}
+
+#header {
+    width:1000px;height: 100px;margin: 0 auto;background: #fff;
+}
+#header #logo {
+    width: 500px;height:100%;background: #fff url(../images/logo.png) no-repeat scroll 0;
+    float: left;border-radius: 20px 0px 0px 0px;
+    
+}
+#header #logo h1 {
+    padding: 3px 0px 5px 50px;
+}
+#header #social_icon {
+    width: 490px;height: 90px;padding: 5px;float: left;background: #fff;text-align: right;
+    transition: all 1s;
+}
+#header #social_icon img:hover {
+    background: #00ACEC;border-radius: 48px;cursor: pointer;
+}
+#menu {
+    width: 1000px;height: 50px;margin: 0 auto;
+    font-size: 14px;
+}
+#menu #menu_s {
+    width: 100%;height: 100%;background:url(../images/img02.jpg) no-repeat;
+}
+#menu #menu_s ul {
+    margin: 0;padding: 0;list-style: none;
+}
+#menu #menu_s ul li {
+    float: left;text-align: center;
+}
+#menu #menu_s ul li a {
+    padding:15px 10px 0px 10px;display: block;width: 95px;text-decoration: none;
+    height: 35px;background: url(../images/img03.jpg) no-repeat right top;color:#fff;
+    transition: all .5s;
+}
+#menu #menu_s ul li a:hover {
+    background: #fff;color:#000;font-weight: bold;font-size: 16px;
+}
+
+
+#content {
+    width: 1000px; height: 1200px; margin: 0 auto;background: #fff;
+}
+#content #left {
+    width: 230px;height: 1200px;float: left;
+}
+#content #left h3 {
+    background: url(../images/img05.jpg) no-repeat;width: 220px;height: 40px;
+    text-align: left;display: block;padding: 10px 0px 0px 10px;color:#fff;
+    margin-top: 25px;margin-bottom: 0px;margin-left: 5px;
+}
+#content #left ul {
+    margin: 0;padding: 0;list-style: none;
+}
+#content #left ul li {
+    text-align: left;border-bottom: 1px dashed #BBBBBB;margin: 0px 20px 0px 15px;
+    transition: all 1s;
+}
+#content #left ul li:hover{
+    margin-left: 25px;
+}
+#content #left ul li a {
+    padding: 10px 0px;display: block;text-decoration: none;font-size: 12px;
+    color: #B20209;
+}
+#content #center {
+    width: 520px;height: 1200px;float: left;margin:25px 5px 0px 15px;
+}
+#content #center h3{
+    font-weight: normal; color: #B20209;font-size: 18px;line-height: 15px;margin-bottom: 0;
+    
+}
+#content #center h3 a:hover {
+    border-bottom: 1px dotted #B20209;
+}
+#content #center h4{
+    font-weight:bold;color:#B20209;font-size: 14px;
+}
+.list {
+    color: #616161;font-size: 14px;
+}
+.block {
+    color:#616161;font-size: 14px;
+}
+.post {
+    color:#616161;border-bottom: 1px dashed #BBBBBB;font-size: 12px;margin: 0;
+    line-height: 20px;margin-bottom: 25px;
+}
+.link {
+    font-weight: bold;
+    padding: 4px 15px 4px 4px;
+    text-align:right;font-size: 12px;margin-bottom: 60px;
+}
+a{
+    color:#B20209;text-decoration: none;
+}
+.contents {
+    color:#616161;font-size: 14px;text-align: justify;line-height: 20px;padding-right: 15px;
+}
+
+#content #right{
+    width: 230px;height: 1200px;float: left;
+}
+#content #right input {
+    margin-left: 15px; height: 30px; border:thin solid #B20209;background: #ddd;
+}
+#content #right input:hover{
+    background: #616161;box-shadow: 2px 2px 5px #616161;
+}
+#content #right p{
+    color:#B20209;padding: 0px 0px 0px 10px;font-size: 14px;margin-bottom: 50px;
+}
+#content #right h3 {
+    background: url(../images/img05.jpg) no-repeat;width: 220px;height: 40px;
+    text-align: left;display: block;padding: 10px 0px 0px 10px;color:#fff;
+    margin-top: 25px;margin-bottom: 0px;margin-left: 5px;
+}
+#content #right ul {
+    margin: 0;padding: 0;list-style: none;
+}
+#content #right ul li {
+    text-align: left;border-bottom: 1px dashed #BBBBBB;margin: 0px 20px 0px 15px;
+    transition: all 1s;
+}
+#content #right ul li:hover{
+    margin-left: 25px;
+}
+#content #right ul li a {
+    padding: 10px 0px;display: block;text-decoration: none;font-size: 12px;
+    color: #B20209;}
+#footer {
+    width: 1000px;height: 70px;margin: 0 auto;border-radius: 0px 0px 20px 0px;
+    background: #fff;margin-bottom: 20px;
+}
+
+/*About Page */
+.about{
+    font-size: 15px;color:#616161;text-align: justify;padding: 0px 10px;
+}
+
+/*Gallery Page*/
+
+.head_three{
+    text-align: center;
+}
+.top_margin{
+    margin-top: 30px;
+}
+#content #img_gallery{
+    width: 500px;height: 1200px;float: left;margin:25px 5px 0px 15px;
+}
+#content #img_gallery h3{
+    font-weight: normal; color: #B20209;font-size: 18px;line-height: 15px;margin-bottom: 0;
+    
+}
+#content #img_gallery h3 a:hover {
+    border-bottom: 1px dotted #B20209;
+}
+#content #img_gallery h4{
+    font-weight:bold;color:#B20209;font-size: 14px;
+}
+#img_gallery img{
+    opacity: .7;transition: all 1s;border:thin solid #787878;padding:5px 5px;
+    background: #616161;
+}
+#img_gallery img:hover{
+    opacity: 100;-moz-transform: scale(1.1);-webkit-transform: scale(1.1);background:#616161;
+    z-index: 2;cursor: pointer;
+}
+#social_icon p {
+    padding: 5px 10px 5px 10px;font-size: 12px;background: #B20209;float: right;
+    text-align: center;border-radius: 5px;
+}
+#social_icon p a {
+    color: #fff;
+}
+#social_icon p a:hover {
+    border-bottom: 1px dotted #fff;
+}
+
+/* Register */
+
+.bg_table {
+    background: #B20209;border-radius: 10px;color: #fff;padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+#content #register {
+    width: 520px;height: 1200px;float: left;margin:25px 5px 0px 15px;
+}
+#content #register h3{
+    font-weight: normal; color: #FFF;font-size: 18px;margin:10px 10px 25px 10px;
+    padding-left: 10px;border-bottom: 1px dashed #cccaaa;padding-bottom: 5px;
+    
+}
+#content #register input {
+    background: #ddd;height: 30px;
+}
+#content #register input:hover {
+    background: #616161;
+}
+.td_padd {
+    padding: 10px;float: left;font-size: 14px;
+}
+#content #register h4{
+    font-weight:bold;color:#fff;font-size: 14px;
+}
+.error {
+    font-size:9px;
+ color:orange;
+ height:6px;
+ padding: 0;
+ text-align:right;
+ text-transform:none;margin: 0;
+}
+
+/*Stic Div */
+
+#stick {
+    position: fixed;top:250px;left: 0;
+}
+#stick p{
+    border-radius:2px 120px 120px 2px;background: #B20209;width: 120px;padding:10px 5px;
+    transition: all 1s;font-size: 14px;
+}
+#stick p a{
+    color:#fff;padding:20px 5px;
+}
+#stick p:hover{
+    background: #fff;width: 130px;border-radius:120px 2px 2px 120px;
+    color: #B20209;font-weight: bold;-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+#stick p a:hover{
+    color:#B20209
+}
+
+/* contact page */
+.radius {
+    border-radius: 5px;
+}

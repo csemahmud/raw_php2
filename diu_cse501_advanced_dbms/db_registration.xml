@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--DOCTYPE db_registration SYSTEM "db_registration.dtd"-->
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE db_registration [
+
+    <!ELEMENT db_registration (tbl_students,tbl_courses,tbl_stud_reg_list)>
+    <!ELEMENT tbl_students (student*)>
+    <!ELEMENT student (name,cgpa)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT cgpa (#PCDATA)>
+    <!ATTLIST student stud_id ID #REQUIRED>
+    <!ELEMENT tbl_courses (course*)>
+    <!ELEMENT course (title,credit)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT credit (#PCDATA)>
+    <!ATTLIST course course ID #REQUIRED>
+    <!ELEMENT tbl_stud_reg_list (stud_reg*)>
+    <!ELEMENT stud_reg (semester,year)>
+    <!ELEMENT semester (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+    <!ATTLIST stud_reg stud_id IDREF #REQUIRED>
+    <!ATTLIST stud_reg course IDREF #REQUIRED>
+
+]>
+
+<db_registration>
+    
+    <tbl_students>
+        <student stud_id = "103">
+
+            <name>Jubaida</name>
+            <cgpa>3.56</cgpa>
+
+        </student>
+
+        <student stud_id = "104">
+
+            <name>Nowrin</name>
+            <cgpa>3.88</cgpa>
+
+        </student>
+    </tbl_students>
+    <tbl_courses>
+        
+        <course course="C123">
+            
+            <title>History</title>
+            <credit>3.0</credit>
+            
+        </course>
+        <course course="C124">
+            
+            <title>Psychology</title>
+            <credit>2.0</credit>
+            
+        </course>
+        
+    </tbl_courses>
+    <tbl_stud_reg_list>
+        
+        <stud_reg stud_id="103" course="C123">
+            
+            <semester>Spring</semester>
+            <year>2014</year>
+            
+        </stud_reg>
+        <stud_reg stud_id="103" course="C124">
+            
+            <semester>Spring</semester>
+            <year>2014</year>
+            
+        </stud_reg>
+        <stud_reg stud_id="104" course="C123">
+            
+            <semester>Spring</semester>
+            <year>2014</year>
+            
+        </stud_reg>
+        
+    </tbl_stud_reg_list>
+    
+</db_registration>
